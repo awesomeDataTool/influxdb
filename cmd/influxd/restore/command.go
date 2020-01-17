@@ -62,7 +62,7 @@ func init() {
 		{
 			DestP:   &flags.boltPath,
 			Flag:    "bolt-path",
-			Default: filepath.Join(dir, http.DefaultTokenFile),
+			Default: filepath.Join(dir, bolt.DefaultFilename),
 			Desc:    "path to target boltdb database",
 		},
 		{
