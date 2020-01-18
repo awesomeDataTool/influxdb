@@ -40,6 +40,7 @@ func main() {
 
 	fs := flag.NewFlagSet("InfluxDB shell version "+version, flag.ExitOnError)
 	fs.StringVar(&c.Host, "host", client.DefaultHost, "Influxdb host to connect to.")
+	fs.StringVar(&c.Path, "host", client.DefaultPath, "Influxdb host to connect to.")
 	fs.IntVar(&c.Port, "port", client.DefaultPort, "Influxdb port to connect to.")
 	fs.StringVar(&c.ClientConfig.UnixSocket, "socket", "", "Influxdb unix socket to connect to.")
 	fs.StringVar(&c.ClientConfig.Username, "username", "", "Username to connect to the server.")
